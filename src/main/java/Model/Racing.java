@@ -24,30 +24,14 @@ public class Racing {
 
     public void raceOneRound() {
         cars.moveAllCars();
-        cars.updateWinCount();
-    }
-
-    public void endOneRound() {
-        cars.resetPositions();
-    }
-
-    public int getMaxWin() {
-        int maxWin = 0;
-
-        for (Car car : cars.getCars()) {
-            if (car.getWinCount() > maxWin) {
-                maxWin = car.getWinCount();
-            }
-        }
-        return maxWin;
     }
 
     public List<String> getFinalWinner() {
-        int maxWin = getMaxWin();
+        int maxPosition = cars.getMaxPosition();
         List<String> finalWinners = new ArrayList<>();
 
         for (Car car : cars.getCars()) {
-            if (car.getWinCount() == maxWin) {
+            if (car.getPosition() == maxPosition) {
                 finalWinners.add(car.getCarName());
             }
         }
