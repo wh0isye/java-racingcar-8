@@ -30,6 +30,8 @@ public class RacingController {
         Racing racing = new Racing(cars, totalRounds);
 
         // 2. 경주 진행
+        OutputView.printResults();
+
         for (int i = 0; i < racing.getTotalRound(); i++) {
             racing.raceOneRound();
 
