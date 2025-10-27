@@ -124,6 +124,13 @@ class Carstest {
         assertEquals(1, woni.getWinCount());
         assertEquals(0, jun.getWinCount());
     }
+
+    @Test
+    void testMinCarCount() {
+        List<Car> carList = new ArrayList<>();
+
+        assertThrows(IllegalArgumentException.class, () -> new Cars(carList));
+    }
 }
 
 
