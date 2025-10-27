@@ -67,6 +67,16 @@ class Carstest {
 
         assertEquals(List.of("pobi", "woni"), cars.getWinner());
     }
+
+    @Test
+    void testMaxCarCount() {
+        List<Car> carList = new ArrayList<>();
+        for (int i = 0; i <= 10; i++) {
+            carList.add(new Car("car" + i));
+        }
+
+        assertThrows(IllegalArgumentException.class, () -> new Cars(carList));
+    }
 }
 
 
