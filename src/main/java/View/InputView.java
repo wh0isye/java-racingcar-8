@@ -19,10 +19,9 @@ public class InputView {
             throw new IllegalArgumentException("숫자만 입력 가능합니다.");
         }
 
-        if(round <= 0) {
+        if (round <= 0) {
             throw new IllegalArgumentException("자연수 값을 시도할 횟수로 입력해주세요.");
-        }
-        else {
+        } else {
             return round;
         }
     }
