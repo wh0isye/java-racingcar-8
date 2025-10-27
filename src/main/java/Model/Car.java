@@ -3,6 +3,7 @@ package Model;
 public class Car {
     private final String carName;
     private int position;
+    private int winCount;
 
     // Car 객체 생성자
     public Car(String carName) {
@@ -11,6 +12,7 @@ public class Car {
         } else {
             this.carName = carName;
             this.position = 0;
+            this.winCount = 0;
         }
     }
 
@@ -26,5 +28,9 @@ public class Car {
 
     public int getPosition() {
         return position;
+    }
+
+    public int getWinCount() {
+        return winCount;
     }
 }
