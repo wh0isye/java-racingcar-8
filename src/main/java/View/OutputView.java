@@ -1,7 +1,6 @@
 package View;
 
 import Model.Car;
-import java.text.DecimalFormat;
 import java.util.List;
 
 public class OutputView {
