@@ -22,6 +22,10 @@ public class Car {
         }
     }
 
+    public void addWin() {
+        winCount++;
+    }
+
     public String getCarName() {
         return carName;
     }
