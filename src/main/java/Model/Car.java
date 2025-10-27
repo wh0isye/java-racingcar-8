@@ -37,4 +37,8 @@ public class Car {
     public int getWinCount() {
         return winCount;
     }
+
+    public void resetPosition() {
+        position = 0;
+    }
 }
