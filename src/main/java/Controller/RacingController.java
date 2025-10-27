@@ -37,12 +37,9 @@ public class RacingController {
 
             // 3. 라운드마다 결과 출력
             OutputView.printRoundResult(cars.getCars());
-
-            // 4. 라운드마다 위치 초기화
-            racing.endOneRound();
         }
 
-        // 5. 최종 우승자 출력
+        // 4. 최종 우승자 출력
         OutputView.printFinalWinner(racing.getFinalWinner());
     }
 }
