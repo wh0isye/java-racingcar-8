@@ -10,7 +10,10 @@ public class Cars {
 
     public void checkCarCount(List<Car> carList) {
         if (carList.size() > MAX_CAR_COUNT) {
-            throw new IllegalArgumentException("최대 자동차 수는 " + MAX_CAR_COUNT + " 입니다.");
+            throw new IllegalArgumentException("최대 자동차 수는 " + MAX_CAR_COUNT + "대 입니다.");
+        }
+        else if (carList.size() <= 0) {
+            throw new IllegalArgumentException("최소 자동차 수는 1대 입니다.");
         }
     }
 
