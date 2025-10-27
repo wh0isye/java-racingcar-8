@@ -50,4 +50,19 @@ public class Cars {
         }
         return winners;
     }
+
+    public void updateWinCount() {
+        int maxPosition = getMaxPosition();
+        for (Car car : carList) {
+            if (car.getPosition() == maxPosition) {
+                car.addWin();
+            }
+        }
+    }
+
+    public void resetPositions() {
+        for (Car car : carList) {
+            car.resetPosition();
+        }
+    }
 }
