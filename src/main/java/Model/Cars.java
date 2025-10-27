@@ -9,7 +9,7 @@ public class Cars {
     private static final int MAX_CAR_COUNT = 10;
 
     public void checkCarCount(List<Car> carList) {
-        if(carList.size() > MAX_CAR_COUNT) {
+        if (carList.size() > MAX_CAR_COUNT) {
             throw new IllegalArgumentException("최대 자동차 수는 " + MAX_CAR_COUNT + " 입니다.");
         }
     }
