@@ -7,7 +7,7 @@ public class Car {
     // Car 객체 생성자
     public Car(String carName) {
         if (carName.length() > 5 || carName.isBlank()) {
-            throw new IllegalArgumentException("carName length exceed 5");
+            throw new IllegalArgumentException("자동차 이름을 1자 이상, 5자 이하로 입력해주세요");
         } else {
             this.carName = carName;
             this.position = 0;
